@@ -104,8 +104,8 @@ describe('Constructor functions', function() {
         it('should be a prototype method', function() {
           expect(Object.getPrototypeOf(u).addSavedPost).toEqual(
             jasmine.any(Function)
-          );
-        });
+            );
+          });
         it('should save a new object to the savedPosts array', function() {
           u.addSavedPost(2, 'Hard Core Quilting', 5);
           expect(u.savedPosts.length).toBe(2);
